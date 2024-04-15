@@ -61,3 +61,7 @@ Contest: Contest between dogs to deside which one is cuter! Data goes to DataBas
 MaxAI: Here I use OpenAI Api to make AI reply as if it was a dog! Funny feature
 
 Bonus: It is a Tamagotchi game where you can take care of your pet
+
+# NOTES
+
+In this project I use OpenAI API key, but there is no need to make your own key, because I did all the stuff for you! Just follow instructions above and it should work correctly!
