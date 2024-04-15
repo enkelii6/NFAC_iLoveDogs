@@ -16,10 +16,6 @@ HomeBrew formulae:
 ```
 $ brew install composer
 ```
-## Generate project key
-```
-php artisan key:generate
-```
 ## Install PostgreSQL@14
 Here: https://www.postgresql.org/download/
 
@@ -50,6 +46,10 @@ GRANT ALL PRIVILEGES ON DATABASE nfac TO nfac;
 Now copy .env.example file to .env:
 ```
 cp .env.example .env
+```
+Generate project key:
+```
+php artisan key:generate
 ```
 Then seed your DataBase:
 ```
