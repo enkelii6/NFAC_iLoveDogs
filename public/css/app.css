@@ -1,0 +1,371 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color:white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+
+#menu-icon{
+    color: white;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: blanchedalmond;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #eec5a9 0%, #c39e63 28.53%, #793f0d 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 19%;
+}
+
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero-text h1{
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.hero-img img{
+    width: 700px;
+    height: auto;
+}
+
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: chocolate;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: all .55s ease;
+    margin: 3px;
+}
+
+.hero-text a:hover{
+    background: white;
+    color: chocolate;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+
+.icons i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+}
+
+.icons i:hover{
+    color: chocolate;
+    transform: translateY(-5px);
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #793f0d;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+
+.contestpic {
+    width: 100%;
+    height: auto;
+    max-width: 420px;
+    max-height: 450px;
+    object-fit: cover;
+    transition: all .50s ease;
+    margin-bottom: 0;
+    border: 3px solid blanchedalmond;
+    border-radius: 10px;
+}
+
+.contestpic:hover {
+    transform: translateY(-20px);
+}
+
+.contest-text {
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    margin-top: 0;
+    position: absolute;
+    top: 85%; /* 50% from the top */
+    left: 50%; /* 50% from the left */
+    transform: translate(-50%, -50%); /* Translate to center */
+}
+
+.winner{
+    text-align: center;
+}
+
+.winner img{
+    position: relative;
+    max-height: 190px;
+    max-width: 190px;
+    border: 3px solid blanchedalmond;
+    border-radius: 10px;
+}
+
+.winner .overlay {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.winner i{
+    scale: 5;
+}
+
+.qform {
+    display: inline-block;
+    color: chocolate;
+    background: white;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: all .55s ease;
+    margin: 3px;
+}
+
+.qform:focus{
+    outline: none; 
+    border-color: chocolate;
+}
+
+.qform:hover{
+    border-color: chocolate;
+}
+
+.qsubmit {
+    display: inline-block;
+    color: white;
+    background: chocolate;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: all .55s ease;
+    margin: 3px;
+}
+
+.qsubmit:hover {
+    background: white;
+    color: chocolate;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.response-box {
+    position: absolute; /* Allows positioning at the bottom of the container */
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: white; /* Semi-transparent white background */
+    border: 1px solid chocolate;
+    border-radius: 10px;
+    padding: 10px; /* Add padding around the text */
+    color: chocolate; /* Text color */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the text */
+}
+
+@media (max-width: 1535px){
+    header{
+        padding: 15x 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .scroll-down{
+        right: 3%;
+        transition: .2s;
+    }
+}
+
+@media (max-width:1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1340px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-text{
+        padding-top: 115px;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
+        width: 560px;
+        height: auto;
+    }
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .icons{
+        display: none;
+    }
+    .scroll-down{
+        display: none;
+    }
+}
+
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }    
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+        transition: all .55s ease;
+        backdrop-filter: blur(10px);
+        background: transparent;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+
+@media (min-width: 680px) {
+    .hero-img{
+        width: 100%;
+        height: auto;
+    }
+}
