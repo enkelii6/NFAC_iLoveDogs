@@ -16,6 +16,10 @@ HomeBrew formulae:
 ```
 $ brew install composer
 ```
+## Generate project key
+```
+php artisan key:generate
+```
 ## Install PostgreSQL@14
 Here: https://www.postgresql.org/download/
 
@@ -43,7 +47,11 @@ GRANT ALL PRIVILEGES ON DATABASE nfac TO nfac;
 \q
 ```
 ## Almost ready!
-Now copy .env.example file to .env, then seed your DataBase:
+Now copy .env.example file to .env:
+```
+cp .env.example .env
+```
+Then seed your DataBase:
 ```
 php artisan migrate:fresh --seed
 ```
@@ -65,3 +73,8 @@ Bonus: It is a Tamagotchi game where you can take care of your pet
 # NOTES
 
 In this project I use OpenAI API key, but there is no need to make your own key, because I did all the stuff for you! Just follow instructions above and it should work correctly!
+
+## Contacts
+
+If you face with some problems, please hit me:
+http://telegram.me/lilsupee
