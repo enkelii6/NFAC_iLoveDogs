@@ -66,9 +66,11 @@ About: A few words about myself
 
 Contest: Contest between dogs to deside which one is cuter! Data goes to DataBase and you can see top-3 liked dog
 
-MaxAI: Here I use OpenAI Api to make AI reply as if it was a dog! Funny feature
+MaxAI: Haven't you ever want to be able to understand your pet? I can make your dream come true! Here I use OpenAI Api to make AI reply as if it was a dog! You can ask some questions from it and talk with it!
 
 Bonus: It is a Tamagotchi game where you can take care of your pet
+
+P.S. I worked a lot on this web site's adaptation, so please check it out
 
 # NOTES
 
